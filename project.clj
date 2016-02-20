@@ -1,6 +1,6 @@
 (defproject OObuddies-bs "1.0.0-SNAPSHOT"
   :description "O boi battlesnake"
-  :url "http://OObuddies-bs.herokuapp.com"
+  :url "http://oobuddies-bs.herokuapp.com"
   :license {:name "None"}
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [compojure "1.4.0"]
