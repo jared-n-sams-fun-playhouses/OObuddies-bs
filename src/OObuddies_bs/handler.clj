@@ -17,6 +17,7 @@
 (defn begin
   [request]
   (pprint (:params request)) ;; for debugging
+  (pprint (:params (get request :snakes)))
   {:status 200
    :body {:name "battlesnake-clojure"
           :color "#ff00ff"
