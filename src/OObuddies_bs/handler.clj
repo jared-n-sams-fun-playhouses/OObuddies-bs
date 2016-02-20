@@ -20,7 +20,7 @@
   {:status 200
    :body {:name "battlesnake-clojure"
           :color "#ff00ff"
-          :head_url "http://example.com"}})
+          :head_url "http://example.co"}})
 
 (defn end
   [request]
