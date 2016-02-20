@@ -12,7 +12,7 @@
   (pprint (:params request)) ;; for debugging
   {:status 200
    :body {:move "north"
-          :taunt "battlesnake-clojure!"}})
+          :taunt "gayyyyymeboyz lmao"}})
 
 (defn begin
   [request]
@@ -20,7 +20,7 @@
   {:status 200
    :body {:name "battlesnake-clojure"
           :color "#ff00ff"
-          :head_url "http://example.co"}})
+          :head_url "http://oobuddies-bs.herokuapp.com/resources/blakerino.png"}})
 
 (defn end
   [request]
@@ -31,7 +31,7 @@
   [request]
   (pprint (:params request)) ;; for debugging
   {:status 200
-   :body {:taunt "From hell's heart I stab at thee!"}})
+   :body {:taunt "Gameboyyyyyyzzzzz"}})
 
 (defroutes app-routes
   (GET "/" [] begin)
