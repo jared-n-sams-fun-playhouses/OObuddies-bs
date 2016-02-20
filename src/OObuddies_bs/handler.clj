@@ -10,7 +10,9 @@
 (defn move
   [request]
   (pprint (:params request)) ;; for debugging
+  (pprint "snake?")
   (pprint (:params (get request :snakes)))
+  (pprint "end")
   {:status 200
    :body {:move "north"
           :taunt "gayyyyymeboyz lmao"}})
