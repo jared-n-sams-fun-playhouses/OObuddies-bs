@@ -1,4 +1,4 @@
-(ns OObuddies-bs.web
+(ns OObuddies_bs.web
   (:require [compojure.core :refer [defroutes GET PUT POST DELETE ANY]]
             [compojure.handler :refer [site]]
             [compojure.route :as route]
