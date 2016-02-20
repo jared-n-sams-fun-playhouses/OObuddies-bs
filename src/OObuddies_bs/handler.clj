@@ -11,9 +11,9 @@
 (defn move
   [request]
   ;(pprint (:params request)) ;; for debugging
+  (pprint (:snakes (:params request)))
   (pprint "snake?")
-                                        ;  (pprint (:params (get request :snakes "nope")))
-  (type request)
+  (pprint (first (:snakes (:params request))))
   (pprint "end")
   {:status 200
    :body {:move "north"
@@ -23,9 +23,9 @@
   [request]
   (pprint (:params request)) ;; for debugging
   {:status 200
-   :body {:name "battlesnake-clojure"
+   :body {:name "dank memes"
           :color "#ff00ff"
-          :head_url "http://oobuddies-bs.herokuapp.com/resources/blakerino.png"}})
+          :head_url "http://i.imgur.com/K943feA.png"}})
 
 (defn end
   [request]
