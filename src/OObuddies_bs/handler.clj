@@ -2,6 +2,7 @@
   (:require [compojure.core :refer :all]
             [compojure.route :as route]
             [compojure.handler :as handler]
+            [ring.middleware.keyword-params :as keyword-params]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
             [ring.middleware.json :as middleware]
             [clojure.pprint :refer [pprint]]))
@@ -9,9 +10,10 @@
 
 (defn move
   [request]
-  (pprint (:params request)) ;; for debugging
+  ;(pprint (:params request)) ;; for debugging
   (pprint "snake?")
-  (pprint (:params (get request :snakes)))
+                                        ;  (pprint (:params (get request :snakes "nope")))
+  (type request)
   (pprint "end")
   {:status 200
    :body {:move "north"
